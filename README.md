@@ -3,9 +3,12 @@
 This is one of the open-source repositories to support developers as well as a journalist to be more productive in their workplace.
 
 ## About structured journalism
+
+This project helps in structuring the content/creating a template(story) on trending topics by customizing the news articles to grab the reader's attention. Learn more about [structure journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/Structured-Journalism-at-DXC-AI-COE-Garages)
+
 Click on the image to see a short video about structured journalism
 [![Structured Journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/Images/Structured%20Journalism.jpg)](https://www.youtube.com/watch?v=FZvgbUoDkYU&ab_channel=MarkSampson)
-This project helps in structuring the content/creating a template(story) on trending topics by customizing the news articles to grab the reader's attention. Learn more about [structure journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/Structured-Journalism-at-DXC-AI-COE-Garages)
+
 
 ## How to use this repo
 
