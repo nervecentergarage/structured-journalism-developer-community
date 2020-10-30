@@ -2069,7 +2069,7 @@ html {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		padding: 0em 0 4em 0;
 		text-align: center;
 	}
 
@@ -2079,6 +2079,13 @@ html {
 			font-size: 2.5em;
 			letter-spacing: -0.035em;
 			line-height: 1;
+		}
+		#header1 {
+			position: relative;
+			background: black;
+			border-bottom: solid 1px #ccc;
+			padding: 5em 0 4em 0;
+			text-align: center;
 		}
 
 /* Nav */
@@ -2178,7 +2185,7 @@ html {
 		background-position: center center;
 		background-size: 100%;
 		background-repeat: no-repeat;
-		text-align: center;
+		text-align: left;
 		position: relative;
 		padding: 8em 0;
 		margin: 4em 0 0 0;
