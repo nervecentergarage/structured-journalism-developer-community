@@ -11,8 +11,8 @@ of things.
 
 * Make sure you have a [GitHub account](https://github.com/signup/free).
 * Submit a ticket for your issue, assuming one does not already exist.
-  * DXC Industrialized AI Starter tickets are filed on the GitHub project:
-    https://github.dxc.com/AppliedAICoEGarages/DXC-Industrialized-AI-Starter/issues
+  * Structured-journalism-developer-community tickets are filed on the GitHub project:
+    https://github.com/nervecentergarage/structured-journalism-developer-community/issues
   * Please try to clearly describe the issue, including the steps to reproduce
     any bug.
   * Please include the story of "why" you want to do something.
@@ -60,13 +60,13 @@ of things.
 
 ## Branching, and Where Changes Go
 
-Until a stable version of DXC Industrialized AI Starter is shipped, there is only one branch:
+Until a stable version of structured-journalism-developer-community is shipped, there is only one branch:
 `master`.  All changes target that branch.
 
 ### Branch and Version Compatibility
 
-Any change to  DXC Industrialized AI Starter branch should strive as much as possible to be compatible
-with all released versions of DXC Industrialized AI Starter.  We want to avoid multiple incompatible
+Any change to structured-journalism-developer-community branch should strive as much as possible to be compatible
+with all released versions of structured-journalism-developer-community.  We want to avoid multiple incompatible
 versions existing as much as possible.
 
 Until 1.0.0 we are willing to accept backward-incompatible changes if there is
@@ -126,9 +126,9 @@ code before any discussion happened.
 
 ## Becoming a Committer
 
-DXC Industrialized AI Starter is an open project: any contributor can become a committer.  Being a
+structured-journalism-developer-community is an open project: any contributor can become a committer.  Being a
 committer comes with great responsibility: your decisions directly shape the
-community, and the effectiveness, of the DXC Industrialized AI Starter project.  You will probably
+community, and the effectiveness, of the structured-journalism-developer-community project.  You will probably
 invest more, and produce less, as a committer than a regular developer
 submitting pull requests.
 
