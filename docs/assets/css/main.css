@@ -2091,7 +2091,11 @@ html {
 /* Nav */		
 	nav ul li a{
 		color:white;
-		font-weight: 900;
+		font-weight: bold;
+	}
+
+	nav ul li{
+		font-weight:bold;
 	}
 
 	#header1 h1 {
