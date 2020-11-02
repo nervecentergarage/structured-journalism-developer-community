@@ -2088,7 +2088,15 @@ html {
 			text-align: center;
 		}
 
-/* Nav */
+/* Nav */		
+	nav ul li a{
+		color:white;
+		font-weight: 900;
+	}
+
+	#header1 h1 {
+		color:white;
+	}
 
 	#nav {
 		margin: 2.5em 0 0 0;
