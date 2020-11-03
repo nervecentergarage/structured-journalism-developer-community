@@ -31,6 +31,10 @@ body {
 	line-height: 1;
 }
 
+#nav{
+	background:black;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -2084,22 +2088,29 @@ html {
 			position: relative;
 			background: black;
 			border-bottom: solid 1px #ccc;
-			padding: 5em 0 4em 0;
+			padding: 2em 0 2em 0;
 			text-align: center;
+			/*font-size:3.25rem;
+			 font-family: "ReithSerif"; 
+			font:inherit;
+			font-weight: 500;
+			font-size: 52px;
+    			font-size: 1.75rem;
+    			line-height: 56px;
+			line-height: 3.5rem;*/
+		}
+		#header1 h1{
+			color: white;
+			font-weight: 600;
+			font-size: 3.5em;
+			letter-spacing: -0.035em;
+			line-height: 1;
 		}
 
-/* Nav */		
-	nav ul li a{
-		color:white;
-		font-weight: 900;
-	}
-
-	#header1 h1 {
-		color:white;
-	}
+/* Nav */
 
 	#nav {
-		margin: 2.5em 0 0 0;
+		margin: 0.25em 0 0 0;
 	}
 
 		#nav > ul {
@@ -2108,7 +2119,7 @@ html {
 
 			#nav > ul > li {
 				display: inline-block;
-				font-style: italic;
+				font-style: normal;
 				margin: 0 0.35em 0 0.35em;
 			}
 
@@ -2118,7 +2129,9 @@ html {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: black;
+					/*color: black;*/
+					color:white;
+					font-weight: 700;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2129,7 +2142,9 @@ html {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
+					/*background: #f3f3f3;*/
+					background: #c92c53;
+					
 				}
 
 				 /* #nav > ul > li.current > a { 
