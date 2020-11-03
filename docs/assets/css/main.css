@@ -2067,11 +2067,15 @@ html {
 		margin-bottom: 0;
 	}
 
+	#intro{
+		background:white;
+	}
+
 /* Header */
 
 	#header {
-		position: relative;
-		background: #ffffff;
+		position: relative;		
+		background: black;
 		border-bottom: solid 1px #ccc;
 		padding: 0em 0 4em 0;
 		text-align: center;
@@ -2110,7 +2114,7 @@ html {
 /* Nav */
 
 	#nav {
-		margin: 0.25em 0 0 0;
+		margin: 0.0em 0 0 0;
 	}
 
 		#nav > ul {
@@ -2203,7 +2207,7 @@ html {
 
 /* Banner */
 
-	#banner {
+	#banner {		
 		background: #fff url("../../images/pic01.jpg");
 		background-position: center center;
 		background-size: 100%;
