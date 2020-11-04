@@ -2075,7 +2075,7 @@ html {
 
 	#header {
 		position: relative;		
-		background: black;
+		background: white;
 		border-bottom: solid 1px #ccc;
 		padding: 0em 0 4em 0;
 		text-align: center;
@@ -2215,7 +2215,7 @@ html {
 		text-align: left;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin: -3em 0 0 0;
 	}
 
 		#banner header {
