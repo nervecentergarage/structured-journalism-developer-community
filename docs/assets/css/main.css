@@ -2075,8 +2075,9 @@ html {
 
 	#header {
 		position: relative;		
-		background: white;
-		border-bottom: solid 1px #ccc;
+		background: whitesmoke;
+		/*border-bottom: solid 1px #ccc;*/
+
 		padding: 0em 0 4em 0;
 		text-align: center;
 	}
