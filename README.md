@@ -6,10 +6,6 @@ This is one of the open-source repositories to support developers as well as a j
 
 This project helps in structuring the content/creating a template(story) on trending topics by customizing the news articles to grab the reader's attention. Learn more about [structure journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/Structured-Journalism-at-DXC-AI-COE-Garages)
 
-Click on the image to see a short video about structured journalism
-[![Structured Journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/Images/Structured%20Journalism.jpg)](https://www.youtube.com/watch?v=FZvgbUoDkYU&ab_channel=MarkSampson)
-
-
 ## How to use this repo
 
 ### For Developers:
@@ -30,7 +26,6 @@ Pull the docker image
 ```json
 docker pull <image-name>
 ```
-
 ### For Journalist/Non-Developers:
 
 Tool developement in process
@@ -43,7 +38,7 @@ Tool developement in process
 
 #### Developers:
 
-Intermediate knowledge on 
+Knowledge on 
 + Python
 + Docker
 + Node-red
