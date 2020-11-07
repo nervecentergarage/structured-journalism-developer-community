@@ -2112,6 +2112,26 @@ html {
 			line-height: 1;
 		}
 
+		#header1l{
+			position: relative;
+			background: black;
+			border-bottom: solid 1px #ccc;
+			padding: 2em 0 2em 0;
+			text-align: center;
+		}
+
+		#header1l h1{
+			color: white;
+			font-weight: 300;
+			font-size: 2.5em;
+			letter-spacing: -0.035em;
+			line-height: 1;
+		}
+
+		#header1l h1 a{
+			font-size: 100%;
+		}
+
 /* Nav */
 
 	#nav {
