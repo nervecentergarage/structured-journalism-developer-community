@@ -91,7 +91,7 @@ Knowledge on
 + Docker
 + Node-red
 
-## Supporting Repositories of Developers Community
+## Related Repositories of Developers Community
 
 Here some of the supporting project repositories of structure journalism listed below with a brief overview,
 
