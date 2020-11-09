@@ -14,19 +14,6 @@ This project helps in structuring the content/creating a template(story) on tren
 
 Currently we supporting most of the latest version of LINUX, Windows and MAC OS X systems.
 
-To clone the repo or minimal installation:
-```json
-git clone https://github.dxc.com/AppliedAICoEGarages/structured-journalism-developer-community/<file>.git
-cd <file>
-pip install -e 
-```
-For full installation:
-
-Pull the docker image
-```json
-docker pull <image-name>
-```
-
 ## To setup Automation Journalism 
 
 ### Steps to install “Docker”
