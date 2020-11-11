@@ -2076,6 +2076,7 @@ html {
 	#header {
 		position: relative;		
 		background: whitesmoke;
+
 		/* border-bottom: solid 1px #ccc; */
 		padding: 0em 0 4em 0;
 		text-align: center;
@@ -2111,6 +2112,26 @@ html {
 			line-height: 1;
 		}
 
+		#header1l{
+			position: relative;
+			background: black;
+			border-bottom: solid 1px #ccc;
+			padding: 2em 0 2em 0;
+			text-align: center;
+		}
+
+		#header1l h1{
+			color: white;
+			font-weight: 300;
+			font-size: 2.5em;
+			letter-spacing: -0.035em;
+			line-height: 1;
+		}
+
+		#header1l h1 a{
+			font-size: 100%;
+		}
+
 /* Nav */
 
 	#nav {
@@ -2135,7 +2156,7 @@ html {
 					border-radius: 5px;
 					/*color: black;*/
 					color:white;
-					font-weight: 700;
+					font-weight: 300;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2215,7 +2236,7 @@ html {
 		text-align: left;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin: -3em 0 0 0;
 	}
 
 		#banner header {
