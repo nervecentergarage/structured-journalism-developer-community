@@ -1,10 +1,10 @@
 ## About Developers community
 
-This is one of the open-source repositories to support developers as well as a journalist to be more productive in their workplace.
+This is one of the open-source repositories to support journalist to be more productive in publishing the news articles. A group of developers involved in assisting journalist,  by creating and personalizing news snippets to provide enough information as well as to grab reader's attention.
 
 ## About structured journalism
 
-This project helps in structuring the content/creating a template(story) on trending topics by customizing the news articles to grab the reader's attention. Learn more about [structure journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/Structured-Journalism-at-DXC-AI-COE-Garages)
+This project helps in structuring the content/creating a template(story) on trending topics by customizing the news articles to grab the reader's attention. Learn more about [structure journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/2.-Structured--Journalism-at-DXC-AI-COE-Garages)
 
 ## How to use this repo
 
