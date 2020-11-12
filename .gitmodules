@@ -1,0 +1,3 @@
+[submodule "MachineLearningNotebooks"]
+	path = MachineLearningNotebooks
+	url = https://github.com/Raviraajan/MachineLearningNotebooks.git
