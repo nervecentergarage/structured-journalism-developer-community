@@ -6,7 +6,12 @@ This is one of the open-source repositories to support journalist to be more pro
 
 This project helps in structuring the content/creating a template(story) on trending topics by customizing the news articles to grab the reader's attention. Learn more about [structure journalism](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/2.-Structured--Journalism-at-DXC-AI-COE-Garages)
 
-## How to use this repo
+## Projects overview
+
+## Getting started
+Flow between different teams will be added sooner
+
+### How to use this repo
 
 ### For Developers:
 
@@ -14,7 +19,38 @@ This project helps in structuring the content/creating a template(story) on tren
 
 Currently we supporting most of the latest version of LINUX, Windows and MAC OS X systems.
 
+## To setup content templates:
+
+Yet to be added. In progress.
+
+### Pre-Requsites:
+
+Knowledge on 
++ Heroku
++ HTML
+
+## To setup Article Production:
+
+Yet to be added. In progress.
+
+### Pre-Requsites:
+
+Knowledge on 
++ Docker
++ Heroku
++ Python
++ Flask
++ MongoDB
+
 ## To setup Automation Journalism 
+
+### Pre-Requsites:
+
+Knowledge on 
++ Python
++ Docker
++ Node-red
++ Heroku
 
 ### Steps to install “Docker”
 >Install docker from https://www.docker.com/products/docker-desktop
@@ -47,9 +83,9 @@ Go back to the Heroku web, and launch the application by clicking the “Open ap
 The node red will be launched and below is the url to access https://nerve-center-automation.herokuapp.com/
 
 ### Steps to install “node red”
-Node-red installed in the system. Installation of Node-red locally https://nodered.org/docs/getting-started/local
-
-Upon Node-red installation, the required nodes shall be available by navigating to “Manage Palette->Palette” option found on top-right in the Node-red window.
+> Node-red installed in the system. Installation of Node-red locally https://nodered.org/docs/getting-started/local
+> 
+> Upon Node-red installation, the required nodes shall be available by navigating to “Manage Palette->Palette” option found on top-right in the Node-red window.
 
 ### The Node-red flow consist of:
 Timestamp node(Inject node)- to trigger the flow
@@ -77,19 +113,6 @@ Trigger the node timestamp upon each different transition state.
 ### For Journalist/Non-Developers:
 
 Tool developement in process
-
-## Projects overview
-
-## Getting started
-
-### Pre-Requsites:
-
-#### Developers:
-
-Knowledge on 
-+ Python
-+ Docker
-+ Node-red
 
 ## Related Repositories of Developers Community
 
