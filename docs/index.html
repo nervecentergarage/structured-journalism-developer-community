@@ -42,6 +42,17 @@
 							<header>
 								<h2> Welcome to Structured Journalism</h2>
 								<p>at DXC technology AI COE Garage</p>
+								<br>
+								<div id="light">
+									<a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+									<video id="StructuredJournalism" width="600" controls>
+									    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+									  </video>
+								     </div>
+								     <div id="fade" onClick="lightbox_close();"></div>
+								     <div>
+									<a href="#" onclick="lightbox_open();"><button>Watch Our video</button></a>
+								</div>
 							</header>
 						</section>
 
@@ -300,6 +311,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				window.document.onkeydown = function(e) {
+		if (!e) {
+		  e = event;
+		}
+		if (e.keyCode == 27) {
+		  lightbox_close();
+		}
+	     }
+	     
+	     function lightbox_open() {
+		var lightBoxVideo = document.getElementById("StructuredJournalism");
+		window.scrollTo(0, 0);
+		document.getElementById('light').style.display = 'block';
+		document.getElementById('fade').style.display = 'block';
+		lightBoxVideo.play();
+	     }
+	     
+	     function lightbox_close() {
+		var lightBoxVideo = document.getElementById("StructuredJournalism");
+		document.getElementById('light').style.display = 'none';
+		document.getElementById('fade').style.display = 'none';
+		lightBoxVideo.pause();
+	     }
+			</script>
 
 	</body>
 </html>
