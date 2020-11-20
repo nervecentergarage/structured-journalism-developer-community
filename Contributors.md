@@ -2,7 +2,7 @@
 
 ## How to contribute
 
-We want to keep it as easy as possible to contribute changes that get things
+We want to keep it as easy as possible to contribute to changes that get things
 working in your environment. There are a few guidelines that we need
 contributors to follow so that we can have a chance of keeping on top
 of things.
@@ -29,7 +29,7 @@ of things.
   	  something sensible.
   * To create a topic branch based on master:
 	`git checkout master && git pull && git checkout -b bug/master/my_contribution`
-* Don't work directly on the `master` branch, or any other core branch.
+* Don't work directly on the `master` branch or any other core branch.
   Your pull request will be rejected unless it is on a topic branch.
 * Every commit should do one thing, and only one thing.
 * Having too many commits is better than having too few commits.
@@ -47,7 +47,7 @@ of things.
 	based on a description rather than an example.  This patch fixes the
 	problem by making the example concrete and imperative.
 
-	The first line is a real life imperative statement with a ticket number
+	The first line is a real-life imperative statement with a ticket number
 	from our issue tracker.  The body describes the behavior without the patch,
 	why this is a problem, and how the patch fixes the problem when applied.
 ````
@@ -65,7 +65,7 @@ Until a stable version of structured-journalism-developer-community is shipped, 
 
 ### Branch and Version Compatibility
 
-Any change to structured-journalism-developer-community branch should strive as much as possible to be compatible
+Any change to the structured-journalism-developer-community branch should strive as much as possible to be compatible
 with all released versions of structured-journalism-developer-community.  We want to avoid multiple incompatible
 versions existing as much as possible.
 
@@ -86,11 +86,11 @@ Right now any change committed to `master` must be considered "live".
   reviewed.
   * Mentioning the issue number in the subject will make this happen through
 	GitHub magic.
-* A committer checks that the pull request is well formed.  If not, they will
+* A committer checks that the pull request is well-formed.  If not, they will
   ask that it is fixed:
   1. it is on its own, appropriately named, branch.
   2. it was submitted to an appropriate target branch.
-  3. it only has commits relevant to the specific issue.
+  3. it only has committed relevant to the specific issue.
   4. it has appropriate, clear, and effective commit messages.
 * A committer can start a pull request specific discussion; at this point that covers:
   1. Reviewing the code for any obvious problems.
@@ -102,7 +102,7 @@ Right now any change committed to `master` must be considered "live".
 
 Anyone can offer their assessment of a pull request, or be involved in the
 discussion, but keep in mind that this isn't the time to decide if the pull
-request is desired or not.  The only reason it should be rejected at this
+the request is desired or not.  The only reason it should be rejected at this
 point is if someone skipped the earlier steps in the process and submitted
 code before any discussion happened.
 
@@ -114,7 +114,7 @@ code before any discussion happened.
   2. Good to merge with minor changes (which are specified, or line comments).
   3. Not good to merge without major changes (which are specified).
 * Any committer can merge after there is a vote of "good to merge".
-   1. Committers are trusted to do the right thing - you can merge your own code, but you should make sure you get appropriate independent review.
+   1. Committers are trusted to do the right thing - you can merge your code, but you should make sure you get an appropriate independent review.
    2. Most changes should not merge unless a code review has been completed.
 * If the pull request is not reviewed within 14 days, you can ask any committer to execute the merge regardless:
   * This can be blocked at any time by a single constructive vote against
@@ -132,13 +132,13 @@ community, and the effectiveness, of the structured-journalism-developer-communi
 invest more, and produce less, as a committer than a regular developer
 submitting pull requests.
 
-As a committer your code is subject to the same review and commit restrictions
+As a committer, your code is subject to the same review and commit restrictions
 as regular committers. You must exercise greater caution that most people in
 what you submit and include in the project.
 
-On the other hand you have several additional responsibilities over and above
+On the other hand, you have several additional responsibilities over and above
 those of a regular developer:
-1. You are responsible for reviewing and voting on inclusion of code from
+1. You are responsible for reviewing and voting on the inclusion of code from
    other developers.
    * You are responsible for giving constructive feedback that action can be
      taken on when code isn't quite there yet
@@ -157,22 +157,22 @@ The process for adding a committer is:
    coding standards by submitting at least two pull requests that are accepted
    without modification.
 2. The candidate is proposed by an existing committer.
-3. A formal vote is held on the project private mailing list.
+3. A formal vote is held on the project's private mailing list.
 5. Existing committers vote on the candidate:
    * yes, accept them as a committer.
    * no, do not accept them as a committer.
 6. If a majority of existing committers vote positively, the new committer
    is added to the public list of committers, and announced on the mailing list.
 
-Voting on adding a committer is absolutely private, and any feedback to
-candidates about why they were not accepted is at the option of the
+Voting on adding a committer is private, and any feedback to
+candidates about why they were not accepted are at the option of the
 project leader.
 
 ### Removing Committers
 
 Removing a committer happens if they don't live up to their responsibilities,
 or if they violate the community standards.  This is done by the project
-leader.  The details of why are private, and will not be shared.
+leader.  The details of the project leader are private, and will not be shared.
 
 [bugs]:            https://github.com/csc/OSSRank/issues
 [best-practice]:   http://sethrobertson.github.com/GitBestPractices/
@@ -181,4 +181,4 @@ leader.  The details of why are private, and will not be shared.
 
 
 ### Security issue notifications
-If you discover a potential security issue in this project we ask that you notify DXC Technology Security via email. Please do **not** create a public github issue
+If you discover a potential security issue in this project we ask that you notify DXC Technology Security via email. Please do **not** create a public GitHub issue
