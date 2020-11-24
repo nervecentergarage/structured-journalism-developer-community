@@ -2130,6 +2130,8 @@ html {
 
 		#header1l h1 a{
 			font-size: 100%;
+			font-weight:300;
+			color: white;
 		}
 
 /* Nav */
@@ -2757,6 +2759,11 @@ html {
 			}
 
 	}
+
+	#StructuredJournalism{
+		object-fit: fill;
+	}
+
 	#fade {
 		display: none;
 		position: fixed;
@@ -2771,7 +2778,7 @@ html {
 		filter: alpha(opacity=80);
 	     }
 	     
-	     #light {
+	#light {
 		display: none;
 		position: fixed;
 		top: 50%;
