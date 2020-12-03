@@ -4,7 +4,7 @@
 
 * [Overview of Structure Journalism](#Overview-of-Structure-Journalism)
 * [How structured journalism helps journalist\?](#How-structured-journalism-helps-journalist)
-* [Developer community at Nerve centre garage](#About-developers-community)
+* [Developer community at Nerve centre garage](#Developer-community-at-Nerve-centre-garage)
   * [Nerve centre garage](#Nerve-centre-garage)
   * [About this Repository](#About-this-Repository)
 * [Related Repositories of Developers Community](#Related-repositories-of-developers-community)
