@@ -39,15 +39,20 @@ Here some of the supporting project repositories of structure journalism listed 
 
 ##### Article Production Team:
 
-> The team focusing on AI to support journalists in aggregating the final stories and to find any tedium contents in the final content prepared for publishing before the approval process. Click here to know more about [article production team](https://github.com/nervecentergarage/structured-journalism-article-production).
+> The team focusing on AI to support journalists in aggregating the final stories and to find any tedium contents in the final content prepared for publishing before the approval process. Click [here](https://github.com/nervecentergarage/structured-journalism-article-production) to know more about article production team.
 
 ##### Automation Team:
 
-> Automation team mainly focuses on automating most of the steps carried out within the Journalism ecosystem to make the process simpler in assigning stories based on the journalist's availability, notifying the editors on completed stories to review, and further sending for approval to publish contents and other process involved.Click here to find [Automation Team Repository](https://github.com/nervecentergarage/structured-journalism-automation)
+> Automation team mainly focuses on automating most of the steps carried out within the Journalism ecosystem to make the process simpler in assigning stories based on the journalist's availability, notifying the editors on completed stories to review, and further sending for approval to publish contents and other process involved.Click [here](https://github.com/nervecentergarage/structured-journalism-automation) to find Automation Team Repository
 
 ## For Contributors
 
 If you are interested in contributing to this project, please refer the [contributors guidelines](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/Contributors.md) provided.
+
+Please follow the documentation templates when you are ***reporting a bug*** or ***suggesting a feature***.
++ Please click [here](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/.github/ISSUE_TEMPLATE/bug_report.md) to view the bug reporting template.
+
++ Please click [here](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/.github/ISSUE_TEMPLATE/feature_request.md) to view feature documentation template.
 
 ## Contact
 
