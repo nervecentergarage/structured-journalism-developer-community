@@ -35,7 +35,7 @@ Here some of the supporting project repositories of structure journalism listed 
 
 ##### Content Template Team:
 
-> Group of members focusing on creating responsive and more efficient templates to present the content(stories) created by [article production team](https://github.com/nervecentergarage/structured-journalism-article-production).To know more about Content template [click here](https://github.com/nervecentergarage/structured-journalism-content-templates)
+> Group of members focusing on creating responsive and efficient templates to present the content(stories). The content template team consumes the news articles crafted by the journalism automation team. To know more about Content template [click here](https://github.com/nervecentergarage/structured-journalism-content-templates)
 
 ##### Article Production Team:
 
