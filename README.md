@@ -17,7 +17,7 @@ In recent years, the internet is overloaded with tons and tons of information an
 
 ## How structured journalism helps journalist\?
 
-In structured journalism, stories are broken into numerous smaller data that can provide information/facts independently. Those smaller pieces of data can be stored, and re-used by any other journalists to create new stories to provide enough information to the readers on the current trends. Learn more about structure journalism at DXC nerve centre garage [click here](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/2.-Structured--Journalism-at-DXC-AI-COE-Garages)
+In structured journalism, stories are broken into numerous smaller data that can provide information/facts independently. Those smaller pieces of data can be stored, and re-used by any other journalists to create new stories to provide enough information to the readers on the current trends. Learn more about structure journalism at DXC nerve centre garage [click here](https://github.com/nervecentergarage/structured-journalism-developer-community/wiki/2.-Structured--Journalism-at-DXC-Nerve-centre-garage)
 
 ## Developer community at Nerve centre garage
 
