@@ -1,4 +1,4 @@
-Here are the list of team members can be reached for any concerns.
+Please reach out to the below-mentioned persons for any concerns.
 
 ## Github pages related concerns/suggestions:
 + Puneet Sihag [psihag2@dxc.com]
