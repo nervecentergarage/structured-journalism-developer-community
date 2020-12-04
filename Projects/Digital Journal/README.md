@@ -15,3 +15,9 @@ Launch the testing.html file through any browser.
 ### API used in Digital Journal
 
 We used publicly available API. Here is the [link](https://covidtracking.com/data/api) to access the API.
+
+These are the 3 API's we used for demo purposes.
+
++ https://api.covidtracking.com/v1/us/daily.json
++ https://api.covidtracking.com/v1/states/${stateName}/current.json
++ https://api.covidtracking.com/v1/states/${stateCode}/daily.json
