@@ -27,6 +27,7 @@ of things.
   * Name your branch by the type of contribution and target:
 	* Generally, the type is `bug`, or `feature`, but if they don't fit pick
   	  something sensible.
+	* Please follow the documentation templates when you are ***[reporting a bug](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)*** or ***[suggesting a feature](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)***.
   * To create a topic branch based on master:
 	`git checkout master && git pull && git checkout -b bug/master/my_contribution`
 * Don't work directly on the `master` branch or any other core branch.
@@ -126,7 +127,7 @@ code before any discussion happened.
 
 ## Becoming a Committer
 
-structured-journalism-developer-community is an open project: any contributor can become a committer.  Being a
+Structured-journalism-developer-community is an open project any contributor can become a committer.  Being a
 committer comes with great responsibility: your decisions directly shape the
 community, and the effectiveness, of the structured-journalism-developer-community project.  You will probably
 invest more, and produce less, as a committer than a regular developer
@@ -168,6 +169,7 @@ Voting on adding a committer is private, and any feedback to
 candidates about why they were not accepted are at the option of the
 project leader.
 
+If you are interested in collaborating with our community for future works/related sub-projects click [here](https://github.com/nervecentergarage/structured-journalism-developer-community/blob/main/About%20You(For%20Contributors).md).
 ### Removing Committers
 
 Removing a committer happens if they don't live up to their responsibilities,
