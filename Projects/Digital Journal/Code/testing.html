@@ -1,0 +1,339 @@
+
+<html>
+<head>	
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+
+<style>
+
+#stateWise{
+
+	color:red;
+	margin-left:25%;
+	margin-right:25%;
+	
+}
+
+#canvasEx{
+	width:50%;
+	float:left;
+}
+
+#canvasEx2{
+	width:50%;
+	float:right;
+}
+
+#canvasEx3{
+	width:50%;
+}
+
+#stateLabel{
+	max-width:100%;
+	white-space:nowrap;
+}
+
+</style>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"></link>
+
+<script type="text/javascript" src="./covid.js"></script>
+
+</head>
+
+<body onload="renderData()">
+
+
+	<table id="data_table" style="display:none">
+	
+	
+	
+	</table>
+
+<!--<canvas id="myChart" style="display: block; width: 1000px; height: 707px;" width="1000" height="800" class="chartjs-render-monitor"></canvas>-->
+<div id="canvasEx">
+	<canvas id="myChart" style="display:block"></canvas>
+</div>
+
+<div id="canvasEx2">
+	<canvas id="myChart2" style="display:block"></canvas>
+</div>
+
+<table style="margin-left:10%; margin-right:30%; float:left">
+	<tr>
+		<td>
+			<label>Start Date:</label>
+		</td>
+		<td>		
+			<input type="date" id="startDateTime" min="2020-01-27"/>		
+		</td>	
+		<td>
+			<label>End Date:</label>
+		</td>
+		<td>
+			<input type="date" id="endDateTime" min="2020-01-28" max=""/>
+		</td>	
+		<td>
+			<button onclick="pickTwoDates()" class="btn btn-primary">Plot</button>
+		</td>	
+	</tr>	
+	</table>
+	
+	
+	<table style="margin-left:74%;">
+	<tr>
+		<td>
+			<button onclick="lastXDays(7)" class="btn btn-primary">Past 7 Days</button>
+		</td>
+		<td>
+			<button onclick="lastXDays(30)" class="btn btn-danger">Past 30 Days</button>
+		</td>
+	</tr>
+	</table>
+	
+
+	
+
+<div id="canvasEx3">
+	<canvas id="myChart3" style="display:block"></canvas>
+</div>
+
+<table id="compareStatesTable" style="display:block; margin-left: 6%">
+	<tr>
+		<td>
+			<label>State-1</label>
+		</td>
+		<td>	
+			<select id="firstState">
+			</select>
+			<!--<input type="text" id="firstState" placeholder="State-1"/>-->
+		</td>	
+	</tr>
+	
+	<tr>
+		<td>
+			<label>State-2</label>
+		</td>
+		<td>
+			<select id="secondState">
+			</select>
+			<!--<input type="text" id="secondState" placeholder="State-2"/>-->
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<label>Start Date</label>
+		</td>
+		<td>
+			<input type="date" id="cStartDate" min="2020-01-28" max="">
+		</td>	
+	</tr>
+	<tr>
+		<td>
+			<label>End Date</label>
+		</td>
+		<td>
+			<input type="date" id="cEndDate" min="2020-01-28" max="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<button onclick="compareStates()" class="btn btn-danger">Compare States</button>
+		</td>
+	</tr>
+	
+	</table>
+	
+
+<script>
+
+var ctx = document.getElementById('myChart');
+var ctx2 = document.getElementById('myChart2');
+var ctx3 = document.getElementById('myChart3');
+config = {
+			type: 'line',
+			data: {
+				labels: ['January', 'February', 'March', 'April', 'May'],
+				datasets: [{
+					label: 'Total Cases',
+					backgroundColor: 'rgb(123,104,238)',
+					borderColor: 'rgb(123,104,238)',
+					data: [
+						
+					],
+					fill: true,
+				},				
+				]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'USA'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Date'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Cases'
+						}
+					}]
+				}
+			}
+		};
+		
+config2 = {
+			type: 'line',
+			data: {
+				labels: [],
+				datasets: [{
+					label: 'Cases',
+					backgroundColor: 'rgb(123,104,238)',
+					borderColor: 'rgb(123,104,238)',
+					data: [
+						
+					],
+					fill: true,
+				},				
+				]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Line Chart'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Date'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Cases'
+						}
+					}]
+				}
+			}
+		};	
+config3 = {
+			type: 'line',
+			data: {
+				labels: [],
+				datasets: [{
+					label: '',
+					backgroundColor: 'rgb(123,104,238)',
+					borderColor: 'rgb(123,104,238)',
+					data: [
+						
+					],
+					fill: false,
+				},	
+				{
+					label: '',
+					backgroundColor: 'rgb(250, 1, 10)',
+					borderColor: 'rgb(250, 1, 10)',
+					data: [
+						
+					],
+					fill: false,
+				}			
+				]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'States Comparison'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Date'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Cases'
+						}
+					}]
+				}
+			}
+		};			
+myLineChart = new Chart(ctx, config);
+myLineChart2 = new Chart(ctx2,config2);
+myLineChart3 = new Chart(ctx3,config3);
+
+</script>
+
+
+<table style="margin-left:30%" id="para">
+<tr>
+	<td id="stateLabel">
+		<label>Choose a State:</label>
+	</td>	
+	<td>
+		<select id="stateName" onchange="getStateData()"></select>
+	</td>	
+	
+	<td>
+		<div id="stateWise">
+		</div>
+	</td>
+</tr>	
+</table>
+
+
+</body>
+
+
+</html>
