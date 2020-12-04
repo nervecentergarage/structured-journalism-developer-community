@@ -60,6 +60,79 @@ function initStateData(){
 	dictionaryData["WY"]="Wyoming";
 }
 
+function compareStatesActivate(){
+	
+	document.getElementById("myChart3").style.display="block";	
+	document.getElementById("compareStatesTable").style.display="block";	
+
+	
+	document.getElementById("myChart").style.display="None";	
+	document.getElementById("myChart2").style.display="None";	
+	document.getElementById("pastFewDays").style.display="None";	
+	document.getElementById("fromToDate").style.display="None";	
+	document.getElementById("myChart4").style.display="None";
+}
+
+function activateWorldWide(){
+
+	document.getElementById("myChart4").style.display="None";
+	document.getElementById("myChart3").style.display="None";	
+	document.getElementById("compareStatesTable").style.display="None";	
+	document.getElementById("myChart").style.display="block";	
+	document.getElementById("myChart2").style.display="block";	
+
+	document.getElementById("pastFewDays").style.display="block";	
+	document.getElementById("fromToDate").style.display="block";	
+	
+}
+
+async function showVisulizations(){
+	var stateName = document.getElementById("stateName").value;
+	var jsonData = await getStateHistoricData(stateName);
+	var stateDateLabel=[];
+	var stateCasesLabel=[];
+	
+	jsonData.forEach(element=>{
+		stateDateLabel.push(element["date"]);
+		stateCasesLabel.push(element["positive"]);
+	});
+	console.log(stateCasesLabel);
+	stateDateLabel.reverse();
+	stateCasesLabel.reverse();
+
+	var newDateLabel = stateDateLabel.slice(stateDateLabel.length-8,stateDateLabel.length-1);
+	var newCasesLabel = stateCasesLabel.slice(stateCasesLabel.length-8,stateCasesLabel.length-1);
+
+	console.log(newCasesLabel);
+
+	config4.options.title.text=`Past 7 Day Cases in ${stateName}`;
+	config4.data.labels=newDateLabel;
+	config4.data.datasets[0].data=newCasesLabel;
+	
+	var percentageIncrease = (newCasesLabel[newCasesLabel.length-1]-newCasesLabel[0])*100/newCasesLabel[0];
+	if(percentageIncrease<0){
+		percentageIncrease*=-1;
+		document.getElementById("summary_7").innerHTML=`Over the past week the percentage decrease in cases in ${dictionaryData[stateName]} has been <span class="figures">${percentageIncrease.toPrecision(3)}%</span>`	;
+	}
+	else{
+		document.getElementById("summary_7").innerHTML=`Over the past week the percentage increase in cases in ${dictionaryData[stateName]} has been <span class="figures">${percentageIncrease.toPrecision(3)}%</span>`	;
+	}
+	
+	myLineChart4.update();	
+
+	/*
+		document.getElementById("myChart3").style.display="None";	
+		document.getElementById("myChart").style.display="None";	
+		document.getElementById("myChart2").style.display="None";	
+		document.getElementById("compareStatesTable").style.display="None";	
+		document.getElementById("pastFewDays").style.display="None";	
+		document.getElementById("fromToDate").style.display="None";	
+	*/
+	document.getElementById("myChart4").style.display="block";
+
+
+}
+
 async function getData(){
 
 	
@@ -126,6 +199,7 @@ function populateStates(){
 async function renderData(){
 	initStateData();
 	populateStates();
+	showVisulizations();
 	dateLabel=[];
 	casesArray=[];	
 	stateData = await getStateData();
@@ -204,7 +278,12 @@ function pickTwoDates(){
 function stateWiseData(){
 	
 	_stateName = stateMapping();
-	document.getElementById("stateWise").innerHTML=`${stateData.deathIncrease} people have died from Coronavirus in ${_stateName} in the past 24 hours, This brings the total number of deaths from the disease to ${stateData.death}, since the start of the pandemic. ${stateData.hospitalizedCurrently} people are currently in ${_stateName} hospitals with Covid-19 complications.${stateData.positive} people have now tested positive for Coronavirus in the state since testing began.`
+	//var para = document.createElement('p');
+	document.getElementById("stateWise").innerText="";
+	//para.innerText=`${stateData.deathIncrease} people have died from Coronavirus in ${_stateName} in the past 24 hours, This brings the total number of deaths from the disease to ${stateData.death}, since the start of the pandemic. ${stateData.hospitalizedCurrently} people are currently in ${_stateName} hospitals with Covid-19 complications.${stateData.positive} people have now tested positive for Coronavirus in the state since testing began.`;
+	//document.getElementById("stateWise").append(para);
+	document.getElementById("stateWise").innerHTML=`<h3>Article Text</h3><p>${stateData.deathIncrease} people have died from Coronavirus in ${_stateName} in the past 24 hours.</p><p> This brings the total number of deaths from the disease to ${stateData.death}, since the start of the pandemic.</p><p> ${stateData.hospitalizedCurrently} people are currently in ${_stateName} hospitals with Covid-19 complications.</p><p>${stateData.positive} people have now tested positive for Coronavirus in the state since testing began.</p>`;
+	//document.getElementById("stateWise").innerHTML=`${stateData.deathIncrease} people have died from Coronavirus in ${_stateName} in the past 24 hours, This brings the total number of deaths from the disease to ${stateData.death}, since the start of the pandemic. ${stateData.hospitalizedCurrently} people are currently in ${_stateName} hospitals with Covid-19 complications.${stateData.positive} people have now tested positive for Coronavirus in the state since testing began.`
 
 }
 
@@ -236,7 +315,7 @@ function lastXDays(X){
 	console.log(casesArray);
 	
 	
-	config2.options.title.text=`${X} Day Cases`;
+	config2.options.title.text=`Past ${X} Day Cases`;
 	config2.data.labels=newDateLabelArray;
 	config2.data.datasets[0].data=newCasesArray;
 	myLineChart2.update();	
